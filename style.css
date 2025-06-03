@@ -1,0 +1,154 @@
+/*Base Reset and Global Styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial',sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #111;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header and Top Nav Section */
+
+.site-header {
+    padding: 1rem 0;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+}
+
+.header-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.header-icons .icon {
+    width: 24px;
+    cursor: pointer;
+}
+
+/* Navigation Menu */
+
+.main-nav {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.main-nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.main-nav li a{
+    font-weight: bold;
+    color: #333;
+    padding: o.5rem;
+    transition: color 0.3s;
+}
+
+.main-nav li a:hover {
+    color: #2a8f55
+}
+
+/* Origin Section */
+
+.origin {
+    margin-top: 2rem;
+}
+
+.origin-image {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Our Story Section */
+
+.our-story {
+    padding: 2rem 0;
+    background-color: #fafafa;
+}
+
+.our-story .story-text {
+    text-align: center;
+}
+
+.our-story h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.our-story p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #444;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Chat Button */
+
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2a8f55;
+    padding: 0.75rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.chat-button img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+}
+
+/* Desktop Style */
+
+@media screen and (min-width: 1024px) {
+    .header-top{
+        padding: 0 2rem;
+    }
+
+.main-nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.our-story h2{
+    font-size: 2rem;
+}
+
+.our-story p {
+    font-size: 1.1rem;
+}
+
+}
