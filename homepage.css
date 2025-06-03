@@ -33,7 +33,7 @@ a{
 
 .site-header {
     padding: 1rem 0;
-    background-color: #f7f7f7;
+    background-color: #ffffff;
     border-bottom: 1px solid #ddd;
 }
 
@@ -43,8 +43,41 @@ a{
     align-items: center;
 }
 
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
 .logo {
     width: 120px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #fafafa;
+    border-radius: 40px;
+    padding: 0.5rem 1rem;
+    margin: 1.5rem auto;
+    max-width: 90%;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: relative;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: transparent;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
 }
 
 .header-icons {
@@ -60,22 +93,24 @@ a{
 /* Navigation Menu */
 
 .main-nav {
-    margin-top: 1rem;
+    margin-top: 2rem;
     text-align: center;
 }
 
 .main-nav ul{
     list-style: none;
     display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+    padding: 0%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
 }
 
-.main-nav li a{
+.main-nav li a {
     font-weight: bold;
-    color: #333;
-    padding: o.5rem;
-    transition: color 0.3s;
+    color: #222;
+    font-size: 1rem;
 }
 
 .main-nav li a:hover {
@@ -126,10 +161,6 @@ a{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #d99c2b;
-    padding: 0.75rem;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .chat-button img {
