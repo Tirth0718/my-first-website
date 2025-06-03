@@ -1,4 +1,11 @@
 /*Base Reset and Global Styles*/
+body {
+    background-color: #a1bf60;
+    color: #111;
+}
+.icon {
+    color: #d99c2b;
+}
 *{
     margin: 0;
     padding: 0;
@@ -99,6 +106,7 @@ a{
 }
 
 .our-story h2 {
+    text-align: center;
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
@@ -118,7 +126,7 @@ a{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #2a8f55;
+    background-color: #d99c2b;
     padding: 0.75rem;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
