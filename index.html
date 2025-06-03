@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOSXDAILY - Home</title>
     <link rel="stylesheet" href="homepage.css" />
+    <script>
+      function checkSearch(e) {
+        if (e.key === 'Enter') {
+          const keyword = document.getElementById('searchInput').value.trim().toLowerCase();
+          if (keyword === 'sea moss' ) {
+            window.location.herf= 'products.html';
+            } else {
+              alert('Only "Sea Moss" search is allowed.');
+          }
+        }
+      }
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -20,7 +32,13 @@
               <div class="serach-bar">
                 <img src="assets/Search bar.svg" alt="Search bar icon" />
                 <img src="assets/search.svg" alt="Search icon" />
-                <input type="text" placeholder="Search...."/>
+                <input 
+                type="text"
+                id="searchInput"
+                placeholder="Search...."
+                class="search-bar-input"
+                onkeypress="checkSearch(event)"
+                />
               </div>
               <div class="header-icons">
                 <img src="assets/Wishlist.svg" alt="Wishlist" class="icon" />

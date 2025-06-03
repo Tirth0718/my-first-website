@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <link rel="stylesheet" href="products.css" /> 
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+     <header class="site-header">
+        <div class="header-top">
+            <!-- Top-left logo-->
+             <img src="assets/logo.png" alt="Mos X Daily" class="logo" />
+
+             <!-- icons -->
+              <div class="header-icons">
+                <img src="assets/Wishlist.svg" alt="Wishlist" class="icon" />
+                <img src="assets/Cart .svg" alt="cart" class="icon" />
+              </div>
+        </div>
+
+        <!-- Navigation -->
+         <nav class="main-nav">
+            <ul>
+            <li><a herf="#">Sea Moss</a></li>
+            <li><a herf="#">Bulk Order</a></li>
+            <li><a herf="#">Mentions</a></li>
+            <li><a herf="#">Reviews</a></li>
+            <li><a herf="#">FAQs</a></li>
+            </ul>
+         </nav>
+     </header>
+
+     <!-- Product Content -->
+      <main class="product-page">
+
+        <aside class="filters>">
+            <h3><img src="assets/Filter.svg" alt="Fliter icon" />Filters </h3>
+            <label>Sort By</label>
+            <select>
+                <option>Recommended</option>
+                <option>Price: Low to High</option>
+            </select>
+
+            <label>Price</label>
+            <input type="range" min="0" max="100" />
+
+            <label>Availability</label>
+            <select>
+                <option>All</option>
+                <option>In Stock</option>
+            </select>
+        </aside>
+
+        <!-- Products -->
+         <section class="products">
+            <h2>Sea Moss Gel</h2>
+
+        <!-- Product 1 -->
+         <div class="product-card">
+            <img src="assets/Product1.png.webp" alt="Lychee & Apple" />
+            <div class="details">
+                <h4>Sea Moss Lychee & Apple</h4>
+                <p>$49</p>
+                <p>Size</p>
+                <div class="sizes">
+                    <button class="size-btn" onclick="selectSize(this, '250ml')">250 ml</button>
+                    <button class="size-btn" onclick="selectSize(this, '500 ml')">500 ml</button>
+                </div>
+                <div class="actions">
+                    <img src="assets/Wishlist.svg" alt="Wishlist" class="icon" />
+                    <button class="buy green" onclick="buyNow('Sea Moss Lychee & Apple')">Buy Now</button>
+                   
+                </div>
+            </div>
+         </div>
+
+         <!-- Products 2 -->
+          <div class="product-card">
+            <img src="assets/Prosuct2.jpeg" alt="Sea Moss ACAI" />
+            <div class="details">
+                <h4>Sea Moss ACAI</h4>
+                <p>$49</p>
+                <p>Size</p>
+                <div class="sizes">
+                    <button class="size-btn" onclick="selectSize(this, '250ml')">250 ml</button>
+                    <button class="size-btn" onclick="selectSize(this, '500 ml')">500 ml</button>
+                </div>
+                <div class="actions">
+                <img src="assets/Wishlist.svg" alt="Wishlist" class="icon" />
+                <button class="buy green" onclick="buyNow('Sea Moss ACAI')">Buy Now</button>   
+                </div>
+            </div>
+          </div>
+         </section>
+      </main>
+        
+      <!-- Chat -->
+       <div class="chat-button">
+        <img src="assets/Chat.svg" alt="Chat" />
+       </div>
+
+     
+    
+</body>
+</html>
