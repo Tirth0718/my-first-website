@@ -67,6 +67,34 @@ body {
     display: none;
 }
 
+/* Buttons coloring */
+
+.buy.green {
+    background-color: #58c74d;
+    column-rule-color: white;
+}
+
+.buy.purple {
+    background-color: #571d41;
+    color: white;
+}
+
+.size-btn {
+    background-color: #2a8f55;
+    color: white;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.size-btn.size-btn.selected {
+    outline: 3px soild #ffa500;
+    font-weight: bold;
+}
+
 /* Product section */
 
 .products h2 {

@@ -43,6 +43,21 @@ a{
     align-items: center;
 }
 
+.serarch-wrapper {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.search-bar-input {
+    width: 80%;
+    max-width: 500px;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border-radius: 40px;
+    border: 1px soild #ccc;
+    background-color: #c2e6a2;
+}
+
 .logo-wrapper {
     display: flex;
     justify-content: center;
