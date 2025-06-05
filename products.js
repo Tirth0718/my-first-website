@@ -1,30 +1,35 @@
-let selectedSize = '';
+let selectedSize = '' ;
 
 function selectSize(button, size) {
-    // Remove highlight from all buttons
     document.querySelectorAll('.size-btn').forEach(btn => {
-      btn.classList.remove('selected');  
+        btn.classList.remove('selected');
     });
-
-    // Highlight selected button
     button.classList.add('selected');
-
-    // Save selected size
     selectedSize = size;
+}
 
-} 
-
-function buyNow(productName) {
+function buyNow(productName, event) {
     if (!selectedSize) {
-        alert('Please select a size before buying');
+        alert('Please select a size before going ahead');
     }
 
-    // Save product and size to localStorage
-    localStorage.setItem('cartItem', JSON.stringify({
-        product: productName,
-        size: selectedSize
-    }));
+    const productPrice = selectedSize === '500ml' ? '$99' : '$49';
 
-    //Redirect to cart page 
-    window.location.href = 'cart.html';
+    // Get image from the product card
+    const productCard = event.target.closest('.product-card');
+    const productImage = productCard.querySelector('img').src;
+
+    const newItem = {
+        product: productName,
+        size: selectedSize,
+        price: productPrice,
+        quantity: 1,
+        image: productImage
+    };
+
+    const existing = JSON.parse(localStorage.getItem('cartItems')) || [];
+    existing.push(newItem);
+    localStorage.setItem('cartItems', JSON.stringify(existing));
+
+    window.location.href='cart.html';
 }
