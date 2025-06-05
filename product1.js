@@ -9,7 +9,16 @@ function selectSize(button, size) {
     });
     button.classList.add('selected');
     selectedSize = size;
+
+    //Update price display based on size 
+    const priceDisplay = document.querySelector('.price');
+    if (size === '250ml') {
+        priceDisplay.textContent = '$49';
+        } else if (size === '500ml') {
+            priceDisplay.textContent = '$99';
+    }
 }
+
 
 // Add to Cart Function
 
@@ -18,9 +27,12 @@ function addToCart(productName) {
         alert('Please select a size before adding to cart');
         return;
     }
+
+    const productPrice = selectSize === '500ml' ? '$99' : '$49' ;
     const cartItem ={
         product: productName,
-        size: selectedSize
+        size: selectedSize,
+        price: productPrice
     };
     localStorage.setItem('cartItem', JSON.stringify(cartItem));
     window.location.href = 'cart.html';

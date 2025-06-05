@@ -8,31 +8,27 @@ body {
     color: #222;
 }
 
-.sit-header {
-    background-color: #fdf9e7;
-    padding: 1rem;
-}
-
-.top-bar {
-    display: flex;
+.header-top {
+    display:flex;
     justify-content: space-between;
     align-items: center;
-}
+    padding: 1rem 2rem;
+ }
 
-.logo {
+ .logo {
     width: 120px;
-}
+ }
 
-.icon-set{
-    display: flex;
-    gap: 1rem;
-}
+ .header-icons {
+    display:flex;
+    gap: 1.5rem;
+ }
 
-
-.icon {
+ .icon {
     width: 40px;
-    height: 40px;
-}
+    height: auto;
+ }
+
 
 .main-nav ul {
     display: flex;
@@ -41,7 +37,6 @@ body {
     gap: 2rem;
     padding: 1rem;
     list-style: none;
-    margin: 0;
 }
 .main-nav a {
     text-decoration: none;
@@ -114,7 +109,6 @@ h1 {
     display: flex;
     gap: 1rem;
     margin: 1rem 0;
-    flex-wrap: wrap;
 }
 
 .pill-btn {
@@ -158,19 +152,14 @@ h1 {
     background-color: #eee;
     margin-bottom: 1rem;
     border-radius: 6px;
-    line-height: 1.6;
 }
 
 /* Chat Icon */
-.chat-icon {
+.chat-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-}
-
-.chat-icon img {
-    width: 40px;
-    height: 40px;
+    background: none;
 }
 
 /* Responsive */
