@@ -15,12 +15,24 @@
             <!-- Top-left logo-->
              <img src="assets/logo.png" alt="Mos X Daily" class="logo" />
 
-             <!-- icons -->
+    <!-- Search + Icons -->
+    <div class="search-bar-container" id="searchBar">
+              <input 
+              type="text"
+              id="searchInput"
+              placeholder="Search..."
+              onkeypress="checkSearch(event)"
+              />
+             </div>
+
+             <!-- Search + Icons -->  
               <div class="header-icons">
+                <img src="assets/search.svg" alt="Search" class="icon" onclick="toggleSearch()" />
                 <img src="assets/Wishlist.svg" alt="Wishlist" class="icon" />
-                <img src="assets/Cart .svg" alt="cart" class="icon" />
+                <img src="assets/Cart.svg" alt="Shopping cart" class="icon" />
               </div>
         </div>
+
 
         <nav class="main-nav">
             <ul>
@@ -32,3 +44,93 @@
             </ul>
         </nav>
      </header>
+
+    <!-- Main Product Section -->
+     <main class="product-container">
+        <div class="product-images">
+            <img id="mainImage" src="assets/Product2.webp" alt="Main Product" />
+            <div class="thumbnails">
+                <button onclick="prevImage()">&#8249;</button>
+                <img src="assets/image1.png.webp" onclick="changeImage(this.src)" />
+                <img src="assets/image6.webp" onclick="changeImage(this.src)" />
+                <img src="assets/image7.webp" onclick="changeImage(this.src)" />
+                <img src="assets/image8.webp" onclick="changeImage(this.src)" />
+                <img src="assets/image9.webp" onclick="changeImage(this.src)" />
+                <img src="assets/image5.png.webp" onclick="changeImage(this.src)" />
+                <button onclick="nextImage()">&#8250;</button>
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h1>Sea Moss ACAI</h1>
+            <p class="price">$49</p>
+            <p><strong>Size:</strong></p>
+            <div class="sizes">
+                <button class="size-btn" onclick="selectSize(this, '250ml')">250 ml</button>
+                <button class="size-btn" onclick="selectSize(this, '500ml')">500 ml</button>
+             </div>
+             <p class="desc">
+                <strong>Description:</strong> <br>
+                Supercharged with over 95 essential minerals, this powerful blend is made with raw organic sea moss, fresh lemon juice, jaggery, alkaline filtered water, and acai. Naturally potent,10x stronger,and 20x richer than others, it's your daily boost for energy, immunity, and wellness.
+             </p>
+
+             <div class="action-buttons">
+                <button class="add-to-cart" onclick="addToCart ('Sea Moss ACAI')">Add to cart</button>
+             </div>
+
+             <!-- Collapsible boxes -->
+
+             <div class="collapse-section">
+                <button class="collapsible">Packs</button>
+                <div class="collapse-content">
+                    <p>This product is currently sold out.</p> 
+                    <p>When available, Sea Moss ACAI is typically offered in 2-pack, 4-pack, and 6-pack bundles. Each pack contains freshly blended, nutrient-dense gel ready for consumption.</p>
+                </div>    
+
+              <div class="collapse-section">
+                <button class="collapsible">Benefits</button>
+                <div class="collapse-content">
+                <p>100% NATURAL VEGAN SUPERFOOD</p>
+                <p> IMMUNE BOOSTING</p>
+                <p>SLEEP QUALITY</p>
+                <p> MUSCLE BUILDING & RECOVERY</p>
+                <p>ENERGY AMPLIFYING</p>
+                <p>HEALTHY HEART</p>
+                <p>GUT HEALTH</p>
+                <p>HOLISTIC REJUVENATION & FOCUS</p>
+                <p>95+ VITAMINS & MINERALS</p>
+                <p>HAIR, SKIN & NAILS</p>
+                <p>NO GMO, DAIRY, GLUTEN OR PRESERVATIVES</p>
+                <p>& MANY MORE! </p>   
+                </div>
+
+                <button class="collapsible">How to use</button>
+                <div class="collapse-content">
+                <p>Grab a spoonful of our luxurious concoctions, and it's like a shot of pure dynamite zipping through your veins. 
+                <p>Boom! You're invincible, and the party's just getting started. But hey, that's not where the groove ends toss 'em into your favorite smoothies, or jazz up your go-to sweet or savory recipes with a sprinkle of magic!</p>
+                These babies have a shelf life that'll make superfoods green with envy. We slap a cheeky "best before" date on our jars, giving you a nudge to indulge while it's still in its prime, but don't sweat it, it's not a countdown to doomsday it's just our way of saying, "savor the goodness!" Oh, and speaking of keeping it cool, make sure those Sea Moss gels get cozy in the fridge as soon as they land on your doorstep they're all about that chill vibe.</p>
+                <p>A daily dose of 1-2 tablespoons per day is the golden ticket to all the sea moss gel greatness.
+                Our gel is loaded with sulfur goodness, making it a skin-saving superhero and here's a jaw-dropping hack for you thrill-seekers pour your gel blend into an ice cube tray and freeze the magic! Those power-packed cubes will keep the mojo going strong for an extra 2 - 3 months perfect for blending into smoothies and sipping like a superstar.</p>
+
+                My friends, it's time to dive headfirst into the glorious world of Mos x Daily sea moss gels.
+                </div>
+
+                <button class="collapsible">Reviews</button>
+                <div class="collapse-content">
+                <p>1. Samantha
+                You know what.. I'm really noticing difference in my skin laxity, hydration and energy levels in the morning I'm a make up artist and over 50 who is an ambassador for some beauty companies and so my skin health is super important.</p>
+                <p>2. Anitta 
+                Me and dad have been having it twice a day he says he has more energy and my stomach is so much flatter, no matter how much pasta i eat, it's fixed any bloating problems lol will need to order more soon</p>
+                <p>3. Nicole
+                I can feel an afternoon boost when i'd normally reach for something sweet or coffee</p>
+                </div>
+            </div>
+        </div>
+     </main>
+    
+ <!-- Chat -->
+       <div class="chat-button">
+        <img src="assets/Chat.svg" alt="Chat" />
+       </div>
+</body>
+</html>

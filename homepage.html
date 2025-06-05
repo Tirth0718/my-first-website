@@ -6,13 +6,18 @@
     <title>MOSXDAILY - Home</title>
     <link rel="stylesheet" href="homepage.css" />
     <script>
+      function toggleSearch() {
+        const bar = document.getElementById('searchBar');
+        bar.style.display = bar.style.display === 'block' ? 'none' : 'block' ;
+      }
+
       function checkSearch(e) {
         if (e.key === 'Enter') {
           const keyword = document.getElementById('searchInput').value.trim().toLowerCase();
           if (keyword === 'sea moss' ) {
-            window.location.herf= 'products.html';
+            window.location.herf='products.html' ;
             } else {
-              alert('Only "Sea Moss" search is allowed.');
+              alert('Only \"Sea Moss\" search is allowed.');
           }
         }
       }
@@ -22,26 +27,25 @@
     <!-- Header -->
     <header class="site-header"> 
         <div class="container header-top">
-            <!-- Centered Logo -->
+            <!-- Logo -->
              <div class='logo-wrapper'>
               <img src="assets/logo.png" alt="Mos X Daily logo" class="logo" />
              </div>
-             
 
-             <!-- Search + Icons -->
-              <div class="serach-bar">
-                <img src="assets/search.svg" alt="Search icon" />
-                <input 
-                type="text"
-                id="searchInput"
-                placeholder="Search...."
-                class="search-bar-input"
-                onkeypress="checkSearch(event)"
-                />
-              </div>
+             <div class="search-bar-container" id="searchBar">
+              <input 
+              type="text"
+              id="searchInput"
+              placeholder="Search..."
+              onkeypress="checkSearch(event)"
+              />
+             </div>
+
+             <!-- Search + Icons -->  
               <div class="header-icons">
+                <img src="assets/search.svg" alt="icon" alt="Search" onclick="toggleSearch()" />
                 <img src="assets/Wishlist.svg" alt="Wishlist" class="icon" />
-                <img src="assets/Cart .svg" alt="Shopping cart" class="icon" />
+                <img src="assets/Cart.svg" alt="Shopping cart" class="icon" />
               </div>
         </div>
 

@@ -1,3 +1,19 @@
+function toggleSearch() {
+    const bar = document.getElementById('searchBar');
+    bar.style.display = bar.style.display === 'block' ? 'none' : 'block' ;
+}
+
+function checkSearch(e) {
+    if (e.key === 'Enter') {
+        const keyword = document.getElementById('searchInput').value.trim().toLowerCase();
+        if (keyword === 'sea moss' ) {
+            window.location.herf='products.html' ;
+        } else {
+            alert('Only \"Sea Moss\" search is allowed.');
+        }
+    }
+}
+
 // Handle carousel,collapsible, and cart logic
 
 let selectedSize = '';
@@ -51,9 +67,10 @@ collapsibles.forEach(btn => {
 // Image Carousel 
 const image = [
     'assets/assets/image1.png.webp',
-    'assets/image2.png.webp', 
-    'assets/image3.jpg.webp',
-    'assets/image4.png.webp',
+    'assets/image6.png.webp', 
+    'assets/image7.jpg.webp',
+    'assets/image8.png.webp',
+    'assets/image9.png.webp',
     'assets/image5.png.webp'
 ];
 let currentImageIndex = 0;

@@ -18,6 +18,22 @@ body {
  .logo {
     width: 120px;
  }
+ 
+.search-bar-container {
+    display: none;
+    width: 100%;
+    padding: 1rem;
+    background-color:#fdf9e7;
+    text-align: center;
+}
+.search-bar-container input {
+    width: 80%;
+    max-width: 500px;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    border: none;
+    font-size: 1rem;
+}
 
  .header-icons {
     display:flex;
@@ -26,7 +42,7 @@ body {
 
  .icon {
     width: 40px;
-    height: auto;
+    height: 40px;
  }
 
 
@@ -57,7 +73,7 @@ body {
 }
 
 .product-images img {
-    max-width: 300px;
+    max-width: 400px;
     border-radius: 10px;
 }
 
@@ -149,9 +165,24 @@ h1 {
 .collapse-content {
     display: none;
     padding: 0.75rem;
-    background-color: #eee;
+    background-color:#ffffff ;
     margin-bottom: 1rem;
     border-radius: 6px;
+    color: rgb(186,11,50);
+}
+
+.collapse-content p {
+    margin-bottom: 1rem;
+}
+
+.collapse-content ul {
+    margin: 0 0 1rem 1.5rem;
+    padding: 0;
+}
+
+.collapse-contentli {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
 }
 
 /* Chat Icon */
