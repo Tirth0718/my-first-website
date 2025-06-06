@@ -193,15 +193,15 @@ a{
     background: #fff;
 }
 
-.wishlist-btn,
-.remove-btn {
+.Wishlist-btn,
+.Cancel-btn {
     background: none;
     border: none;
     cursor: pointer;
 }
 
-.wishlist-btn img,
-.remove-btn img {
+.Wishlist-btn img,
+.Cancel-btn img {
     width: 28px;
     height: 28px;
 }
