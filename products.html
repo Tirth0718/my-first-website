@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products Page</title>
-    <link rel="stylesheet" href="products.css" /> 
+    <title>Products - Sea Moss - MOS X Daily</title>
+    <link rel="stylesheet" href="products.css" />
     <script src="products.js" defer></script>
 </head>
 <body>
@@ -15,30 +15,47 @@
             <!-- Top-left logo-->
              <img src="assets/logo.png" alt="Mos X Daily" class="logo" />
 
-             <!-- icons -->
+    <!-- Search + Icons -->
+    <div class="search-bar-container" id="searchBar">
+              <input 
+              type="text"
+              id="searchInput"
+              placeholder="Search..."
+              onkeypress="checkSearch(event)"
+              />
+             </div>
+
+             <!-- Search + Icons -->  
               <div class="header-icons">
+                <img src="assets/search.svg" alt="Search" class="icon" onclick="toggleSearch()" />
                 <img src="assets/Wishlist.svg" alt="Wishlist" class="icon" />
-                <img src="assets/Cart.svg" alt="cart" class="icon" />
+                <img src="assets/Cart.svg" alt="Shopping cart" class="icon" />
               </div>
         </div>
 
-        <!-- Navigation -->
-         <nav class="main-nav">
+
+        <nav class="main-nav">
             <ul>
-            <li><a herf="#">Sea Moss</a></li>
-            <li><a herf="#">Bulk Order</a></li>
-            <li><a herf="#">Mentions</a></li>
-            <li><a herf="#">Reviews</a></li>
-            <li><a herf="#">FAQs</a></li>
+            <li><a href="products.html">Sea Moss</a></li>
+            <li><a href="#">Bulk Order</a></li>
+            <li><a href="#">Mentions</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">FAQs</a></li>
             </ul>
-         </nav>
+        </nav>
      </header>
+
+      <!-- Products -->
+         <section class="products">
+            <h2>Sea Moss Gel</h2>
 
      <!-- Product Content -->
       <main class="product-page">
+        <!-- Mobile filters button -->
+        <button class="filter-toggle" onclick="toggleFilters()"> Show Filters</button>
 
         <aside class="filters>">
-            <h3><img src="assets/Filter.svg" alt="Fliter icon" />Filters </h3>
+            <h3><img src="assets/Filter.svg" alt="Fliter icon" />Filters</h3>
             <label>Sort By</label>
             <select>
                 <option>Recommended</option>
@@ -55,10 +72,6 @@
                 <option>In Stock</option>
             </select>
         </aside>
-
-        <!-- Products -->
-         <section class="products">
-            <h2>Sea Moss Gel</h2>
 
         <!-- Product 1 -->
          <div class="product-card">
@@ -104,7 +117,10 @@
         <img src="assets/Chat.svg" alt="Chat" />
        </div>
 
-     
-    
+       <!-- Footer -->
+       <footer class="site-footer">
+        <p>&copy; 2025 MOS X Daily. All rights reserved.</p>
+       </footer>
+   
 </body>
 </html>

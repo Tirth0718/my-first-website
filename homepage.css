@@ -163,9 +163,9 @@ a{
 }
 
 
-/* Desktop Style */
+/* Mobile Style */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 844px) {
     .header-top{
         padding: 0 2rem;
     }

@@ -5,14 +5,16 @@ function toggleSearch() {
 
 function checkSearch(e) {
     if (e.key === 'Enter') {
-        const keyword = document.getElementById('searchInput').value.trim().toLowerCase();
-        if (keyword === 'sea moss' ) {
-            window.location.herf='products.html' ;
+        const query = document.getElementById('searchInput').value.trim().toLowerCase();
+        if (query === 'sea moss' ) {
+            window.location.href='products.html' ;
         } else {
             alert('Only \"Sea Moss\" search is allowed.');
         }
     }
-}
+}   
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     // display total form cartItems
@@ -30,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     paymentForm.addEventListener('submit', function(e) {
         e.preventDefault(); 
-        
+
         const deliveryAddress = document.getElementById('delivery-address').value.trim();
 
         if (deliveryAddress === '') {

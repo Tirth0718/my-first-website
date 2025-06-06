@@ -1,3 +1,4 @@
+/*Base Reset and Global Styles*/
 body {
     font-family: Arial, sans-serif;
     background-color: #fdf9e7;
@@ -33,6 +34,16 @@ body {
     font-size: 1rem;
 }
 
+#searchInput {
+    background-color: #c6dc8c;
+    border: 2px solid #555;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    border-radius: 8px;
+}
+
  .header-icons {
     display:flex;
     gap: 1.5rem;
@@ -43,19 +54,52 @@ body {
     height: 40px;
     cursor: pointer;
  }
-.main-nav ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 1rem;
-    list-style: none;
+
+img {
+    max-width: 100%;
+    height: auto;
 }
-.main-nav a {
+
+a{
     text-decoration: none;
-    color: #004d2c;
-    font-weight: bold;
+    color: inherit;
 }
+
+/* Header and Top Nav Section */
+
+.site-header {
+    padding: 1rem 0;
+    background-color: #fdf9e7;
+    border-bottom: 1px solid #fdf9e7;
+}
+/* Navigation Menu */
+
+.main-nav {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.main-nav ul{
+    list-style: none;
+    display:flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+}
+
+.main-nav li a {
+    font-weight: bold;
+    color: #222;
+    font-size: 1rem;
+}
+
+.main-nav li a:hover {
+    color: #2a8f55
+}
+
+
 
 .confirmation-container {
     padding: 20px;
@@ -194,9 +238,18 @@ body {
     width: 40px;
     height: 40px;
 } 
+.site-footer {
+    background-color: #c6dc8c;
+    color: #333;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 14px;
+    margin-top: 30px;
+    border-top: 2px solid #555;
+}
 
 /* Mobile Layout */
-@media (max-width: 768px) {
+@media (max-width: 844px) {
     .confirmation-grid {
         flex-direction: column;
     }
@@ -209,5 +262,18 @@ body {
         text-align: center;
         font-size: 20px;
         margin-top: 10px;
+    }
+    .main-nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+    list-style: none;
+    }
+    .main-nav a {
+    text-decoration: none;
+    color: #004d2c;
+    font-weight: bold;
     }
 }

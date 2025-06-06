@@ -5,14 +5,15 @@ function toggleSearch() {
 
 function checkSearch(e) {
     if (e.key === 'Enter') {
-        const keyword = document.getElementById('searchInput').value.trim().toLowerCase();
-        if (keyword === 'sea moss' ) {
-            window.location.herf='products.html' ;
+        const query = document.getElementById('searchInput').value.trim().toLowerCase();
+        if (query === 'sea moss' ) {
+            window.location.href='products.html' ;
         } else {
             alert('Only \"Sea Moss\" search is allowed.');
         }
     }
-}
+}   
+
 
 // Handle carousel,collapsible, and cart logic
 
@@ -35,7 +36,6 @@ function selectSize(button, size) {
     }
 }
 
-
 // Add to Cart Function
 
 function addToCart(productName) {
@@ -44,13 +44,21 @@ function addToCart(productName) {
         return;
     }
 
-    const productPrice = selectSize === '500ml' ? '$99' : '$49' ;
-    const cartItem ={
+    const productPrice = selectedSize === '500ml' ? '$99' : '$49' ;
+
+    const productImage = document.querySelector('.main-product-image').src;
+
+    const newItem ={
         product: productName,
         size: selectedSize,
-        price: productPrice
+        price: productPrice,
+        quantity: 1,
+        image: productImage
     };
-    localStorage.setItem('cartItem', JSON.stringify(cartItem));
+    const existing = JSON.parse(localStorage.getItem('cartItems')) || [];
+    existing.push(newItem)
+    localStorage.setItem('cartItems', JSON.stringify(existing));
+    
     window.location.href = 'cart.html';
 }
 

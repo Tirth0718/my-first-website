@@ -5,14 +5,14 @@ function toggleSearch() {
 
 function checkSearch(e) {
     if (e.key === 'Enter') {
-        const keyword = document.getElementById('searchInput').value.trim().toLowerCase();
-        if (keyword === 'sea moss' ) {
-            window.location.herf='products.html' ;
+        const query = document.getElementById('searchInput').value.trim().toLowerCase();
+        if (query === 'sea moss' ) {
+            window.location.href='products.html' ;
         } else {
             alert('Only \"Sea Moss\" search is allowed.');
         }
     }
-}
+} 
 
 document.addEventListener('DOMContentLoaded', function() {
     const orderItemsContainer = document.getElementById('order-items');
