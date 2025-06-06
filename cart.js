@@ -54,7 +54,7 @@ function changeQty(index, delta) {
 
 function moveToWishlist(index) {
     const wishlistItem = cartData[index];
-    alert(`${wishlistItem.product} moved to wishlist. `); //Placeholder implement 
+    alert(`${wishlistItem.product} moved to Wishlist. `); //Placeholder implement 
     removeItem(index);
 }
 
