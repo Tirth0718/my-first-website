@@ -22,10 +22,10 @@ function renderCart() {
           </div>
           <div class="item-controls">
             <button class="wishlist-btn" onclick="moveToWishlist(${index})">
-                <img src="assets/wishlist.svg" alt="Wishlist" />
+                <img src="assets/wishlist.svg" alt="wishlist" />
             </button>
             <button class="remove-btn" onclick="removeItem(${index})">
-                <img src="assets/cancel.svg" alt="Remove" />
+                <img src="assets/cancel.svg" alt="cancel" />
             </button>
             <div class="qty-box">
                 <button onclick="changeQty(${index}, -1)">-</button>
