@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="checkout.css" />
+    <script src="checkout.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+     <header class="site-header">
+        <div class="header-top">
+            <!-- Top-left logo-->
+             <img src="assets/logo.png" alt="Mos X Daily" class="logo" />
+
+    <!-- Search + Icons -->
+    <div class="search-bar-container" id="searchBar">
+              <input 
+              type="text"
+              id="searchInput"
+              placeholder="Search..."
+              onkeypress="checkSearch(event)"
+              />
+             </div>
+
+             <!-- Search + Icons -->  
+              <div class="header-icons">
+                <img src="assets/search.svg" alt="Search" class="icon" onclick="toggleSearch()" />
+                <img src="assets/Wishlist.svg" alt="Wishlist" class="icon" />
+                <img src="assets/Filledcart.svg" alt="Filled shopping cart" class="icon" />
+              </div>
+        </div>
+
+
+        <nav class="main-nav">
+            <ul>
+            <li><a herf="#">Sea Moss</a></li>
+            <li><a herf="#">Bulk Order</a></li>
+            <li><a herf="#">Mentions</a></li>
+            <li><a herf="#">Reviews</a></li>
+            <li><a herf="#">FAQs</a></li>
+            </ul>
+        </nav>
+     </header>
+
+    <main class="checkout-container">
+        <a href="cart.html" class="back-line">&#x276E; Back to cart</a>
+        <div class="checkout-grid">
+            <!-- Payment Methods -->
+             <section class="payment-section">
+                <h2>Payment Methods</h2>
+                <div class="card-icons">
+                    <img src="assets/Card1.png" alt="Amex" />
+                    <img src="assets/Card2.png" alt="Mastercard" />
+                    <img src="assets/Card3.png" alt="Visa" />
+                </div>
+                <form id="payment-form">
+                    <input type="text" placeholder="Full Name" id="fullname" required />
+                    <input type="text" placeholder="Date/Month" id="expiry date" required />
+                    <input type="text" placeholder="Card Number" id="cardnumber" required />
+                    <input type="text" placeholder="CVV" id="cvv" required />
+                    <div class="total-box">Total: <span id="checkout-total"></span></div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+             </section>
+            
+            <!-- Delivery Section -->
+            <section class="delivery-section">
+                <h2>Delivery</h2>
+                <div class="map-preview">
+                    <img src="assets/Map1.png" alt="Satellite Map preview" />
+                    <img src="assets/Map2.png" alt="Explore Map preview" />
+                </div>
+                <input type="text" placeholder="Enter Location" id="delivery-address" required/>
+                <div class="address-options">
+                    <button class="address-btn">+ Address</button>
+                    <button class="address-btn">Home</button>
+                    <button class="address-btn">Office</button>
+                    <button class="address-btn">Other</button>
+                </div>
+            </section>
+        </div>    
+    </main>
+
+    <!-- Chat -->
+       <div class="chat-button">
+        <img src="assets/Chat.svg" alt="Chat" />
+       </div>
+</body>
+</html>
+
+
