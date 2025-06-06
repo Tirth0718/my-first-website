@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <link rel="stylesheet" href="confirmation.css" />
+    <script src="confirmation.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+     <header class="site-header">
+        <div class="header-top">
+            <!-- Top-left logo-->
+             <img src="assets/logo.png" alt="Mos X Daily" class="logo" />
+
+    <!-- Search + Icons -->
+    <div class="search-bar-container" id="searchBar">
+              <input 
+              type="text"
+              id="searchInput"
+              placeholder="Search..."
+              onkeypress="checkSearch(event)"
+              />
+             </div>
+
+             <!-- Search + Icons -->  
+              <div class="header-icons">
+                <img src="assets/search.svg" alt="Search" class="icon" onclick="toggleSearch()" />
+                <img src="assets/Wishlist.svg" alt="Wishlist" class="icon" />
+                <img src="assets/Cart.svg" alt="Shopping cart" class="icon" />
+              </div>
+        </div>
+
+
+        <nav class="main-nav">
+            <ul>
+            <li><a herf="#">Sea Moss</a></li>
+            <li><a herf="#">Bulk Order</a></li>
+            <li><a herf="#">Mentions</a></li>
+            <li><a herf="#">Reviews</a></li>
+            <li><a herf="#">FAQs</a></li>
+            </ul>
+        </nav>
+     </header>
+
+    <main class="confirmation-container">
+        <a href="homepage.html" class="back-line">&#x276E; Continue Shopping</a>
+        <div class="confirmation-grid">
+
+            <section class="thankyou-section">
+                <h1>Thank You for your order !!! <img src="assets/smile.svg" alt="smile" class="smile-icon" /> </h1>
+                <p class="order-info"><strong>Order ID :</strong> #123456</p>
+                <p class="order-info"><strong>Payment Info :</strong> Paid by XXXX XXXX XXXX 2825 </p>
+                <p class="order-info"><strong>Address :</strong><br> 5 Lincoln Square South, <br> Carlton,Melbourne - 3053</p>
+                <p class="order-info"><strong>Expected Delivery :</strong> 18th June - 25th June</p>
+                <button class="receipt-btn">Download Receipt</button>
+            </section>
+
+            <section class="order-details-section">
+            <h2>Order Details</h2>
+            <div id="order-items" class="order-items"></div>
+            <div class="total-box">Total: <span id="order-total"></span></div>
+        </section>
+
+        </div>
+    </main>
+
+        <!-- Chat -->
+       <div class="chat-button">
+        <img src="assets/Chat.svg" alt="Chat" />
+       </div>
+</body>
+</html>

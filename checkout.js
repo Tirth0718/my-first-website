@@ -29,6 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const paymentForm = document.getElementById('payment-form');
 
     paymentForm.addEventListener('submit', function(e) {
+        e.preventDefault(); 
+        
         const deliveryAddress = document.getElementById('delivery-address').value.trim();
 
         if (deliveryAddress === '') {
@@ -36,6 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        window.location.href='confirmation.html';
+        window.location.href= 'confirmation.html';
     });
 });

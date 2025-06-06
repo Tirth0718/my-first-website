@@ -1,36 +1,49 @@
 /*Base Reset and Global Styles*/
 body {
-    background-color: #fdf9e7;
     font-family: Arial, sans-serif;
+    background-color: #fdf9e7;
+    margin: 0;
+    padding: 0;
     color: #222;
-    margin:0%;
 }
 
-.top-bar {
-    display: flex;
+.header-top {
+    display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    position: relative;
-}
+    padding: 1rem 2rem;
+ }
 
-.logo {
+ .logo {
     width: 120px;
+ }
+ 
+.search-bar-container {
+    display: none;
+    width: 100%;
+    padding: 1rem;
+    background-color:#fdf9e7;
+    text-align: center;
+}
+.search-bar-container input {
+    width: 80%;
+    max-width: 500px;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    border: none;
+    font-size: 1rem;
 }
 
-.icon-set {
-    display: flex;
-    gap: 1rem;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-}
+ .header-icons {
+    display:flex;
+    gap: 1.5rem;
+ }
 
-.icon {
+ .icon {
     width: 40px;
     height: 40px;
     cursor: pointer;
-}
+ }
 
 .search-bar-container {
     display: none;
