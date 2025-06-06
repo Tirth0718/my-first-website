@@ -40,20 +40,30 @@ body {
  }
 
  /* Navigation */
- .main-nav ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 1rem;
-    list-style: none;
- }
+.main-nav {
+    margin-top: 2rem;
+    text-align: center;
+}
 
- .main-nav a {
-    text-decoration: none;
+.main-nav ul{
+    list-style: none;
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+}
+
+.main-nav li a {
     font-weight: bold;
-    color: #004d2c;
- }
+    color: #222;
+    font-size: 1rem;
+}
+
+.main-nav li a:hover {
+    color: #2a8f55
+}
 
  /* Layout */
  .product-page {
