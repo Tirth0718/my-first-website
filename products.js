@@ -14,8 +14,8 @@ function checkSearch(e) {
     }
 }
 
-function toggleFilters () {
-    const filters = document.querySelector('filters');
+function toggleFilters() {
+    const filters = document.querySelector('.filters');
     filters.classList.toggle('open');
 }
 
