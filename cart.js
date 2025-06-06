@@ -24,7 +24,7 @@ function renderCart() {
             <button class="wishlist-btn" onclick="moveToWishlist(${index})">
                 <img src="assets/wishlist.svg" alt="wishlist" />
             </button>
-            <button class="remove-btn" onclick="removeItem(${index})">
+            <button class="cancel-btn" onclick="removeItem(${index})">
                 <img src="assets/cancel.svg" alt="cancel" />
             </button>
             <div class="qty-box">
